@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موفّر الطاقة الذكي</title>
+    <link rel="stylesheet" href="code.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <a href="#" class="logo"><img src="images/تعـــــــلم_..._تقـــــــدم-removebg-preview.png" height="50px" width="50px"></a>
+        <nav class="navigation">
+<a href="codes.html">تعليم الاطفال</a>
+<a href="code.html">حاسبة الاستهلاك</a>
+<a href="setyle.html">طرق توفير الكهرباء</a>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <div class="container" id="calculator">
+        <h1>حاسبة استهلاك الطاقة</h1>
+        <p>أدخل استهلاك الأجهزة بالكيلووات/ساعة:</p>
+        <div class="input-group">
+            <label for="appliance1">الجهاز 1:</label>
+            <input type="number" id="appliance1" placeholder="أدخل استهلاك الجهاز">
+        </div>
+        <div class="input-group">
+            <label for="appliance2">الجهاز 2:</label>
+            <input type="number" id="appliance2" placeholder="أدخل استهلاك الجهاز">
+        </div>
+        <div class="input-group">
+            <label for="appliance3">الجهاز 3:</label>
+            <input type="number" id="appliance3" placeholder="أدخل استهلاك الجهاز">
+        </div>
+        <div class="input-group">
+            <label for="price">سعر الكيلووات/ساعة (بالعملة المحلية):</label>
+            <input type="number" id="price" placeholder="أدخل سعر الكيلووات">
+        </div>
+        <button onclick="calculateTotal()">احسب الإجمالي</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <!-- قسم تواصل -->
+    <footer id="contact">
+        <p>© 2024 موفّر الطاقة الذكي. جميع الحقوق محفوظة.</p>
+        <p>للتواصل: <a href="mailto:info@energy-saver.com">info@energy-saver.com</a></p>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
